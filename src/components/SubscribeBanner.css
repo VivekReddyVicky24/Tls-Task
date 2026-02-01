@@ -1,0 +1,8 @@
+.subscribe-banner{background:#052736;padding:18px;border-radius:12px;margin-top:18px}
+.subscribe-banner__inner{max-width:760px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.subscribe-banner__copy h5{margin:0;font-size:14px;color:#e6f0ff}
+.subscribe-banner__sub{font-size:12px;color:#9fb0cc}
+.subscribe-banner__form{display:flex;gap:8px}
+.subscribe-input{padding:8px 10px;border-radius:8px;border:1px solid #0b3b4a;background:#04202a;color:#cfe8ff;font-size:13px}
+.btn-primary{background:#0ea5ff;color:#001018;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+@media(max-width:600px){.subscribe-banner__inner{flex-direction:column;align-items:stretch}.subscribe-banner__form{width:100%}}

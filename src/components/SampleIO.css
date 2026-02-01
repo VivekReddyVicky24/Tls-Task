@@ -1,0 +1,36 @@
+.sample-io {
+  background: #0b1a2a;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sample-io__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sample-io__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9fb0cc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sample-io__content {
+  margin: 0;
+  padding: 12px;
+  background: #051620;
+  border-radius: 8px;
+  border: 1px solid #072735;
+  color: #dff3ff;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;
+  overflow-x: auto;
+}

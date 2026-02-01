@@ -1,0 +1,34 @@
+.curved-loop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 1;
+  user-select: none;
+}
+
+.curved-loop__svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+.curved-loop__text {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  fill: #e6f0ff;
+  letter-spacing: 0.5px;
+}
+
+.curved-loop:hover .curved-loop__text {
+  fill: #0ea5ff;
+  transition: fill 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .curved-loop__text {
+    font-size: 14px;
+  }
+}

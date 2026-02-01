@@ -1,0 +1,6 @@
+.hint-card{background:#071826;border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,0.45)}
+.hint-card__head{display:flex;justify-content:space-between;align-items:center}
+.hint-card__toggle{background:transparent;border:0;color:#9fb0cc;font-size:13px;cursor:pointer}
+.hint-card__body{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.hint-card__hint{background:#05202a;padding:10px;border-radius:8px;color:#cfe8ff}
+.hint-card__locked{padding:10px;border-radius:8px;border:1px solid #07343f;color:#6d8597;filter:blur(0.6px);user-select:none}

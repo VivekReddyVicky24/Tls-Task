@@ -1,0 +1,11 @@
+.leaderboard{background:#071826;border-radius:12px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+.leaderboard__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.leaderboard__head h3{margin:0;font-size:15px;color:#e6f0ff}
+.leaderboard__sub{font-size:12px;color:#9fb0cc}
+.leaderboard__list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.leaderboard__item{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px}
+.leaderboard__item:hover{background:#05252f}
+.leaderboard__item.is-you{background:#063445}
+.leaderboard__rank{font-weight:700;color:#cfe8ff;margin-right:8px}
+.leaderboard__name{color:#e6f0ff}
+.leaderboard__time{font-size:12px;color:#9fb0cc}

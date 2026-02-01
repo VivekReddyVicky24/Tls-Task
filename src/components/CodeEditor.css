@@ -1,0 +1,41 @@
+.codeeditor-root {
+  --editor-height: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.16));
+}
+
+.codeeditor-root .monaco-editor {
+  border-radius: 8px;
+  height: var(--editor-height);
+  background: transparent;
+}
+
+.codeeditor-root .monaco-editor .margin, .codeeditor-root .monaco-editor .glyph-margin {
+  background: #1E1E1E !important;
+}
+
+.codeeditor-fallback {
+  width: 100%;
+  height: var(--editor-height);
+  resize: vertical;
+  padding: 14px;
+  font-family: 'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e6eef8;
+  background: #02161e;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+.codeeditor-fallback-note {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+  background: rgba(0,0,0,0.12);
+  border-top: 1px solid rgba(255,255,255,0.02);
+}

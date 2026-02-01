@@ -1,0 +1,15 @@
+.qotd-root{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6f0ff;background:#071226;min-height:100vh}
+.qotd-main{max-width:1280px;margin:0 auto;padding:32px 20px}
+.qotd-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:980px){.qotd-grid{grid-template-columns:1fr 1.4fr;grid-auto-rows:980px}}
+.qotd-left{display:flex;flex-direction:column;gap:18px}
+.qotd-heading{margin:18px 0 28px 0;max-width:100%;overflow:hidden}
+.qotd-heading .scroll-velocity__item{font-size:28px}
+
+/* keep heading centered and visually separate from header */
+.qotd-main > .qotd-heading{margin-left:0;margin-right:0}
+.qotd-right{display:flex;flex-direction:column;gap:12px}
+.qotd-footer{text-align:center;padding:28px 0;color:#94a3b8;font-size:13px}
+.qotd-sticky{position:fixed;left:0;right:0;bottom:16px;padding:0 16px;display:none}
+.qotd-sticky__inner{max-width:760px;margin:0 auto;display:flex;gap:12px;background:transparent}
+@media(max-width:640px){.qotd-sticky{display:block}}

@@ -1,0 +1,29 @@
+.circular-text{font-size: 24px;
+  font-weight: 600;
+  fill: white;width:120px;font-size:40px;height:   120px;display:inline-block;position:relative}
+.circular-text__svg{width:100%;height:100%;display:block}
+.circular-text__halo{fill:rgba(0,153,255,0.14)}
+.circular-text__text{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';font-size:20px;fill:#bfe8ff;letter-spacing:1.8px;font-weight:700}
+
+/* rotate the whole group */
+.circular-text__g{
+  transform-origin:100px 100px;
+  animation: spin linear infinite;
+  animation-duration: var(--spin-duration, 20s);
+}
+
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/* header size variant */
+.logo-circle{width:88px;height:88px}
+.logo-circle .circular-text__svg{transform:scale(0.82);transform-origin:50% 50%}
+.logo-circle .circular-text__center-dot{width:52px;height:52px}
+.logo-circle .circular-text__center-text{font-size:22px}
+
+/* Center monogram */
+.circular-text__center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.circular-text__center-dot{width:60px;height:60px;border-radius:50%;background:#ffffff;box-shadow:0 10px 30px rgba(2,6,23,0.32)}
+.circular-text__center-text{position:absolute;color:#083064;font-weight:800;font-size:28px;font-family:Georgia, 'Times New Roman', serif;letter-spacing:0.5px}
+
+/* ensure pointer events for hover work consistently */
+.circular-text{cursor:default}

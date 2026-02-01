@@ -1,0 +1,37 @@
+.scroll-velocity{width:100%;overflow:hidden;display:block;padding:14px 0;position:relative}
+.scroll-velocity__wrap{position:relative}
+
+.scroll-velocity__track{display:flex;gap:48px;align-items:center;white-space:nowrap;will-change:transform;animation:marquee var(--duration, 20s) linear infinite}
+.scroll-velocity__track.reverse{animation-direction:reverse}
+
+.scroll-velocity__item{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';font-size:32px;color:rgba(255,255,255,0.95);font-weight:800;text-transform:uppercase;letter-spacing:3px;padding:6px 0}
+
+/* subtle neon gradient text for modern look */
+.scroll-velocity__item{
+  background: linear-gradient(90deg,#dbf3ff 0%, #8fd1ff 45%, #cfe8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter:drop-shadow(0 8px 30px rgba(0,100,150,0.18));
+}
+
+@keyframes marquee{
+  0%{transform:translateX(0%)}
+  100%{transform:translateX(-50%)}
+}
+
+/* responsive tweaks */
+@media (max-width:980px){
+  .scroll-velocity__item{font-size:22px;letter-spacing:2px}
+}
+@media (max-width:640px){
+  .scroll-velocity__item{font-size:16px;letter-spacing:1.2px}
+  .scroll-velocity{padding:8px 0}
+}
+
+/* small visual flourish: subtle line above and below */
+.scroll-velocity::before,.scroll-velocity::after{content:"";position:absolute;left:4%;right:4%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.04),transparent);opacity:0.9}
+.scroll-velocity::before{top:4px}
+.scroll-velocity::after{bottom:4px}
+
+/* visually-hidden */
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;border:0;padding:0;margin:-1px}

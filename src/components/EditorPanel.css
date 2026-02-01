@@ -1,0 +1,17 @@
+.editor-grid{display:grid;grid-template-columns:1fr;grid-template-rows:680px 200px;gap:16px;margin-top:18px;margin-bottom:32px}
+
+.editor-panel{background:#071826;padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.45);display:flex;flex-direction:column}
+.editor-panel__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.select-lang{padding:6px;border-radius:8px;border:1px solid #11303f;background:#051620;color:#cfe8ff;font-size:13px}
+.editor-panel__actions{display:flex;gap:8px}
+.btn-primary.small{background:#0ea5ff;color:#001018;padding:6px 10px;border-radius:8px;border:0;cursor:pointer}
+.btn-ghost{background:transparent;border:0;color:#b8c7dd;padding:6px 10px;border-radius:8px;cursor:pointer}
+
+.editor-textarea{width:100%;height:220px;border-radius:8px;border:1px solid #072735;padding:12px;background:#02161e;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;color:#dff3ff;font-size:13px;resize:vertical}
+
+.output-panel{background:#071826;padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.45);display:flex;flex-direction:column;height:265px;overflow-y:auto}
+.output-panel__title{font-size:13px;color:#9fb0cc;margin-bottom:8px}
+.output-panel__box{padding:10px;border-radius:8px;border:1px solid #083544;background:#05282a;color:#bfead6}
+.output-panel__box.is-success{border-color:#064e2a;background:#04321b;color:#bbf7d0}
+.output-panel__box.is-error{border-color:#4c0418;background:#3b0b16;color:#fecaca}
+.output-sample{margin-top:8px;background:transparent;padding:8px;border-radius:6px;font-size:13px}
