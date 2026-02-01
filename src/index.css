@@ -6,15 +6,25 @@
 @custom-variant dark (&:is(.dark *));
 
 html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    background-color: #071226;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+     background-color: #071226;
 }
 
 @theme inline {

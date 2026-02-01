@@ -22,7 +22,7 @@ export default function QOTD() {
     <div className="qotd-root">
       <Header />
       <main className="qotd-main">
-        <ScrollVelocity texts={["React Bits", "Question of the Day"]} velocity={120} className="qotd-heading" />
+        <ScrollVelocity texts={["TechLearn Solutions", "Question of the Day"]} velocity={120} className="qotd-heading" />
 
         <div className="qotd-grid">
           <div className="qotd-left">
